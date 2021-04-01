@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView" />
+
+    <item
+        android:id="@+id/filterCategory"
+        android:icon="@drawable/ic_filter_list"
+        android:title="Filter"
+        app:showAsAction="ifRoom|collapseActionView">
+
+        <menu>
+            <item
+                android:id="@+id/faculty"
+                android:title="Faculty" />
+
+            <item
+                android:id="@+id/college"
+                android:title="College" />
+
+            <item
+                android:id="@+id/mpp"
+                android:title="MPP" />
+
+            <item
+                android:id="@+id/others"
+                android:title="Others" />
+
+        </menu>
+    </item>
+
+</menu>

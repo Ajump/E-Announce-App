@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- EVENT IMAGE -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:scaleType="centerCrop"
+            android:background="@color/backgroundShimmer"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_marginBottom="8sp"/>
+
+        <!--EVENT NAME VIEW LAYOUT-->
+<!--        <include layout="@layout/view_name_layout"/>-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16sp"
+            android:layout_marginLeft="8sp">
+
+            <RelativeLayout
+                android:id="@+id/parentName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:gravity="left"
+                    android:text=" "
+                    android:background="@color/backgroundShimmer"
+                    android:layout_marginRight="8sp"
+                    android:ellipsize="end"
+                    android:textColor="#000"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parentName">
+
+                <TextView
+                    android:id="@+id/Organizer_id"
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:background="@color/backgroundShimmer"
+                    android:layout_marginRight="16sp"
+                    android:text=" "/>
+
+                <TextView
+
+                    android:layout_width="60sp"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/Organizer_id"
+                    android:textSize="16sp"
+                    android:background="@color/backgroundShimmer"
+                    android:layout_marginRight="16sp"
+                    android:text=" "
+                    android:layout_marginLeft="24sp"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/parentName"
+                android:layout_marginRight="16sp"
+                android:layout_alignParentEnd="true">
+
+                <ImageView
+                    android:id="@+id/view_Coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_local_play_default_24dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6sp"
+                    android:layout_toRightOf="@+id/view_Coupon"
+                    android:src="@drawable/ic_restaurant_default_24dp"/>
+            </RelativeLayout>
+        </RelativeLayout>
+
+<!--    Add place holder for list shimmer    -->
+        <include layout="@layout/shimmer_view_list_placeholder"/>
+        <include layout="@layout/shimmer_view_list_placeholder"/>
+        <include layout="@layout/shimmer_view_list_placeholder"/>
+        <include layout="@layout/shimmer_view_list_placeholder"/>
+        <include layout="@layout/shimmer_view_list_placeholder"/>
+        <!--DATE VIEW LAYOUT-->
+<!--        <include layout="@layout/view_date_layout"/>-->
+
+
+        <!--LOCATION VIEW LAYOUT-->
+<!--        <include layout="@layout/view_location_layout"/>-->
+
+
+        <!--SPEAKER VIEW LAYOUT-->
+<!--        <include layout="@layout/view_speaker_layout"/>-->
+
+        <!--CONTACT PERSON VIEW LAYOUT-->
+<!--        <include layout="@layout/view_contact_layout"/>-->
+
+
+    </LinearLayout>
+
+</ScrollView>

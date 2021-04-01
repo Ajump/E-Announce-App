@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/main_layout_id"
+        android:layout_above="@+id/Navigation_btm"
+        tools:context=".MainActivity">
+
+        <!--    <include-->
+        <!--        android:id="@+id/main_toolbar_id"-->
+        <!--        layout="@layout/toolbar_map"/>-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:gravity="center_vertical"
+                android:text="TODAY EVENT"
+
+                android:textColor="@android:color/white"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:background="@android:color/darker_gray">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/todayEvent"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="30sp"-->
+<!--                android:layout_marginLeft="8dp"-->
+<!--                android:gravity="center_vertical"-->
+<!--                android:text="Today Events"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="#000"/>-->
+
+<!--        </LinearLayout>-->
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager_cardview_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/Navigation_btm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@color/colorPrimary"
+        app:itemTextColor="@drawable/selector"
+        app:itemIconTint="@drawable/selector"
+        app:menu="@menu/menu_navigation"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+
+

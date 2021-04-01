@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/contactLayout">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8sp">
+
+        <ImageView
+            android:id="@+id/image_id"
+            android:layout_width="?actionBarSize"
+            android:layout_height="?actionBarSize"
+            android:src="@drawable/ic_contact_phone_black_24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/image_id">
+
+            <RelativeLayout
+                android:id="@+id/contactParent1"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4sp"
+                android:layout_centerVertical="true">
+
+                <TextView
+                    android:id="@+id/viewContactName1_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text=" "
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/view_ContactNum1_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewContactName1_id"
+                    android:textSize="18sp"
+                    android:text=" " />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/contactParent1">
+
+                <TextView
+                    android:id="@+id/viewContactName2_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:text=" "
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/view_ContactNum2_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/viewContactName2_id"
+                    android:textSize="18sp"
+                    android:text=" " />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

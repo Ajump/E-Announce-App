@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_event_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/backButton_eventDetails"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginRight="32sp"
+        android:src="@drawable/ic_arrow_back"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:minHeight="?actionBarSize"
+        android:paddingRight="16sp"
+        android:paddingBottom="16sp"
+        android:paddingTop="16sp"
+        android:text="Event Details"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/interested_icon"
+        android:layout_width="35sp"
+        android:layout_height="35sp"
+        android:layout_gravity="right"
+        android:layout_marginRight="8sp"/>
+
+</androidx.appcompat.widget.Toolbar>

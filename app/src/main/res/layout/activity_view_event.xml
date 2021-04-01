@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewEventActivity">
+
+    <!--TOOLBAR-->
+    <include
+        android:id="@+id/toolbarViewEvent"
+        layout="@layout/toolbar_view_event"/>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_below="@+id/toolbarViewEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        shimmer:duration="800">
+
+        <include layout="@layout/view_event_shimmer"/>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+<!--    <com.github.ybq.android.spinkit.SpinKitView-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:layout_width="150sp"-->
+<!--        android:layout_height="150sp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:id="@+id/spinKit_id"-->
+<!--        style="@style/SpinKitView.Large.CubeGrid"-->
+<!--        app:SpinKit_Color="@color/colorAccent"/>-->
+
+    <LinearLayout
+        android:layout_below="@+id/toolbarViewEvent"
+        android:id="@+id/viewEventLayout_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!-- EVENT IMAGE -->
+                <ImageView
+                    android:id="@+id/view_poster_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="250sp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_launcher_foreground"
+                    android:layout_marginBottom="8sp"/>
+
+                <!--EVENT NAME VIEW LAYOUT-->
+                <include layout="@layout/view_name_layout"/>
+
+                <!--DATE VIEW LAYOUT-->
+                <include layout="@layout/view_date_layout"/>
+
+                <!--LOCATION VIEW LAYOUT-->
+                <include layout="@layout/view_location_layout"/>
+
+                <!--SPEAKER VIEW LAYOUT-->
+                <include
+                    layout="@layout/view_speaker_layout"/>
+
+                <!--CONTACT PERSON VIEW LAYOUT-->
+                <include
+                    layout="@layout/view_contact_layout"/>
+
+                <!--DESCRIPTION VIEW LAYOUT-->
+                <include
+                    layout="@layout/view_description_layout"/>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

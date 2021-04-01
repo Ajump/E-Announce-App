@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentMap">
+
+    <include android:id="@+id/toolbarMap"
+        layout="@layout/toolbar_map"/>
+
+    <fragment
+        android:id="@+id/map_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_below="@+id/toolbarMap"/>
+
+    <Button
+        android:id="@+id/map_button_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get Direction"
+        android:textColor="#fff"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8sp"/>
+
+</RelativeLayout>

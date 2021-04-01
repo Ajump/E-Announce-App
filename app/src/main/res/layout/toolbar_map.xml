@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/toolbar_map"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/backButton_map"
+        android:layout_width="25sp"
+        android:layout_height="25sp"
+        android:layout_marginRight="32sp"
+        android:src="@drawable/ic_arrow_back"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="?actionBarSize"
+        android:paddingRight="16sp"
+        android:paddingBottom="16sp"
+        android:paddingTop="16sp"
+        android:text="Event Map Location"
+        android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+        android:textColor="@android:color/white"/>
+
+</androidx.appcompat.widget.Toolbar>
